@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center my-12">Let's Get Some <span class="text-blue-800">Moooney!!!</span> </h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white text-center">
+            <div class="bg-blue-300 p-8">
+                <h2 class="text-3xl">Deposit</h2>
+                <h1 class="text-5xl">$<span id="deposit-amount">00</span></h1>
+            </div>
+            <div class="bg-green-300 p-8">
+                <h2 class="text-3xl">Withdraw</h2>
+                <h1 class="text-5xl">$<span id="withdraw-amount">00</span></h1>
+            </div>
+            <div class="bg-yellow-300 p-8">
+                <h2 class="text-3xl">Balance</h2>
+                <h1 class="text-5xl">$<span id="balance-amount">1240</span></h1>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-8">
+            <div class="bg-red-300 p-8">
+                <input id="deposit-input" class="block w-3/4 mt-5 px-5" type="text"
+                    placeholder="Enter Your Deposit Amount"><br>
+                <button id="deposit-btn"
+                    class="bg-orange-300 hover:bg-orange-200 px-7 py-1 text-white-800 rounded-sm">Deposit</button>
+            </div>
+            <div class="bg-purple-300 p-8">
+                <input id="withdraw-input" class="block w-3/4 mt-5 px-5" type="text"
+                    placeholder="Enter Your Withdraw Amount"><br>
+                <button id="withdraw-btn"
+                    class="bg-orange-300 hover:bg-orange-200 px-7 py-1 text-white-800 rounded-sm">Withdraw</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/bank.js"></script>
+</body>
+
+</html>
